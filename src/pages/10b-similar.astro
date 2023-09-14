@@ -1,0 +1,25 @@
+---
+import Layout from '../layouts/Slide.astro';
+import { Code } from 'astro/components';
+---
+
+<Layout title="Four">
+	<main>
+		<h1>...similar</h1>
+    <p>(Next for Drupal Client)</p>
+<Code code={`import { DrupalClient } from "next-drupal"
+
+// Create a new DrupalClient.
+const drupal = new DrupalClient("https://example.com")
+
+// Fetch articles.
+const articles = await drupal.getResourceCollection("node--article")
+
+// Fetch one article by id.
+const article = await drupal.getResource(
+  "node--article",
+  "f4c61473-8297-4bf3-bab7-21c9633a7ca7"
+)
+`} lang="javascript" theme="dracula" />
+	</main>
+</Layout>

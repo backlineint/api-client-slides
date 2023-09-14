@@ -1,0 +1,22 @@
+---
+import { Image } from 'astro:assets';
+import Layout from '../layouts/Slide.astro';
+import { Code } from 'astro/components';
+---
+
+<Layout title="Commitment">
+	<main>
+		<h1>An extendable base</h1>
+    <picture>
+      <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f4ab/512.webp" type="image/webp">
+      <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f4ab/512.gif" alt="💫" width="250" height="250">
+    </picture>
+    <p>A developer could...</p>
+    <ul>
+      <li>Extend the base class to quickly create a REST client</li>
+      <li>Publish a json-api-client that automatically uses a specific state management solution</li>
+      <li>Use only our individual authentication utilities</li>
+      <li>Bundle the json-api-client in an Astro starter</li>
+    </ul>
+	</main>
+</Layout>

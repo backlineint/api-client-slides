@@ -6,8 +6,15 @@ main {
 	text-align: center;
 }
 
-main ol {
+main ol,
+main ul {
 	text-align: start;
 	display: grid;
 	gap: var(--size-3);
+}
+
+main .box {
+  border-radius: var(--radius-2);
+  border: 2px solid var(--color-2);
+  box-shadow: var(--shadow-6);
 }

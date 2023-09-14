@@ -1,0 +1,18 @@
+---
+import { Image } from 'astro:assets';
+import Layout from '../layouts/Slide.astro';
+import { Code } from 'astro/components';
+---
+
+<Layout title="Localization">
+	<main>
+    <h1>Localization</h1>
+    <h2>Easily source content in different languages</h2>
+    <picture>
+      <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f409/512.webp" type="image/webp">
+      <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f409/512.gif" alt="🐉" width="250" height="250">
+    </picture>
+    <p>Thar be dragons: JSON:API has some limitations in this area.</p>
+    <aside>Issue <a href="https://www.drupal.org/project/api_client/issues/3377803">#3377803</a></aside>
+	</main>
+</Layout>
